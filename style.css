@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+:root {
+    --cor-dia: #FFEBBF;
+    --cor-tarde: #598392;
+    --cor-noite: #112540;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
