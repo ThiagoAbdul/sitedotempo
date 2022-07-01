@@ -13,7 +13,7 @@
         <h1>Hora do dia</h1>
     </header>
     <main>
-        <h2>Agora são 9 horas</h2>
+        <h2 id="txt-horario">Agora são 9 horas</h2>
         <picture>
             <source media="(max-width: 350px)" srcset="imagens/tarde-small.png">
             <img src="imagens/tarde.png" alt="FOTO">
@@ -24,6 +24,40 @@
     </footer>
 
     <script>
+
+        var horario = new Date().getHours()
+
+        var txtHorario = pegarComponente("h2#txt-horario")
+
+        txtHorario.innerText = `Agora são ${horario} horas.`
+        
+        var corFundoAtual
+
+        if (horario > 5 && horario < 12){
+            corFundoAtual = pegarVariavelCSS("--cor-dia")
+        }
+
+        else if (horario > 18){
+            corFundoAtual = pegarVariavelCSS("--cor-noite")
+        }
+
+        else {
+            corFundoAtual = pegarVariavelCSS("--cor-tarde")
+        }
+
+        mudarCorFundo(corFundoAtual)
+
+        function pegarComponente(componente){
+            return document.querySelector(componente)
+        }
+        
+        function mudarCorFundo(cor){
+        document.body.style.backgroundColor = cor
+        }
+
+        function pegarVariavelCSS(variavel){
+            return getComputedStyle(document.documentElement).getPropertyValue(variavel)
+        }
 
     </script>
 </body>
