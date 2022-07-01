@@ -10,3 +10,53 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    background-color: grey;
+    padding: 16px;
+}
+
+h1 {
+    color: white;
+    font: normal bolder 3em Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 32px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    border-radius: 12px;
+    min-width: 256px;
+    max-width: 640px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    height: 320px;
+    
+    
+}
+
+main > img {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    text-align: center;
+    
+    
+}
+
+main h2 {
+    color: black;
+    font: normal bold 1.4em Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 8px;
+    margin: 8px;
+}
+
+footer > p{
+    color: white;
+    font: normal bold 1em Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 24px;
+    
+}
