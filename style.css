@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor-dia: #FFEBBF;
-    --cor-tarde: #598392;
-    --cor-noite: #112540;
+    --cor-dia: #d8bf8a;
+    --cor-tarde: #526d79;
+    --cor-noite: #0e1e2e;
 }
 
 * {
@@ -12,12 +12,12 @@
 }
 
 body {
-    background-color: grey;
+    background-color: var(--cor-dia);
     padding: 16px;
 }
 
 h1 {
-    color: white;
+    color: #ffffff;
     font: normal bolder 3em Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 32px;
@@ -32,15 +32,13 @@ main {
     padding: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
     height: 320px;
-    
-    
 }
 
-main > img {
+main > picture > img {
     display: block;
     margin: auto;
-    max-width: 350px;
     text-align: center;
+
     
     
 }
@@ -55,7 +53,7 @@ main h2 {
 
 footer > p{
     color: white;
-    font: normal bold 1em Arial, Helvetica, sans-serif;
+    font: italic bold 1em Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 24px;
     
